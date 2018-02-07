@@ -15,7 +15,9 @@
     [
       "module-resolver",
       {
-        "root": ["./src"]
+        "alias": {
+          "@root": "./src"
+        }
       }
     ],
     "transform-class-properties"
