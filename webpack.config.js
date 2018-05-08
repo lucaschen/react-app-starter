@@ -10,7 +10,7 @@ module.exports = {
     watchContentBase: true
   },
   devtool: "source-map",
-  entry: path.resolve(__dirname, "./src/App.js"),
+  entry: ["babel-polyfill", path.resolve(__dirname, "./src/App.js")],
   output: {
     filename: "bundle.js",
     path: __dirname + "/dist",
